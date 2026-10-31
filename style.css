@@ -1,0 +1,23 @@
+html , body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    height: 100hw;
+}
+
+@media (orientation: portrait) {
+    #canvas{
+        width:100hw;
+        height:100vw;
+        transform-origin: top left;
+        transform: translateX(100vw) rotate(90deg);
+    }
+}
